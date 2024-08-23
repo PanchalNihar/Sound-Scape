@@ -1,0 +1,17 @@
+.profile-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  margin: 15px;
+  overflow: hidden;
+}
+.sidebar-container {
+  background-color:#914F1E;
+  height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}

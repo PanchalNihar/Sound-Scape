@@ -1,0 +1,88 @@
+.screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    background-color:#DEAC80/* Match the background color of your page */
+  }
+  
+  .library-body {
+    width: 90%;
+    height: 95%;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: space-between;
+  }
+  
+  .playlist-card {
+    position: relative;
+    width: 15%;
+    height: 35%;
+    border-radius: 20px;
+    background-color: rgb(30, 42, 62);
+    border: 1px solid rgba(54, 69, 98, 0.18);
+    padding: 1%;
+    margin-bottom: 2%;
+    background: rgb(30, 42, 62);
+    background: linear-gradient(135deg, #e76b50 0%, #d6966c 100%);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .playlist-card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  .playlist-image {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 15px;
+  }
+  
+  .playlist-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .playlist-title {
+    font-weight: 800;
+    font-size: 16px;
+    color: black;
+    
+  }
+  
+  .playlist-subtitle {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .playlist-fade {
+    position: absolute;
+    bottom: 10px; /* Positioning the button at the bottom */
+    right: 10px; /* Positioning the button at the right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    border-radius: 50%; /* Make the button circular */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* White color for the play icon */
+    font-size: 24px; /* Size of the play icon */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .playlist-fade:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+  }
+  

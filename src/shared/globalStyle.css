@@ -1,0 +1,11 @@
+.screen-container {
+  width: 1500px;
+  height: 100%;
+  background-color: bisque;
+ 
+  opacity: 0.8;
+
+}
+.flex{
+  display: flex;
+}
